@@ -4,46 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./assets/styles/index.css" rel="stylesheet">
+    <link href="./assets/styles/index.css" rel="stylesheet" />
   </head>
   <body>
     <!-- This is a comment   -->
-    <p>Hello Html at DCTP!</p>
-    <!--Display Image -->
-    <img src="./assets/images/img01.jpg" width="400px" alt="An image" />
-    <!-- Headings in HTML   -->
-    <h1>Heading 1</h1>
-    <h2>Heaading 2</h2>
-    <h3>Heading Three</h3>
-    <h4>Heading Four</h4>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus veniam, iusto, itaque praesentium harum ipsa asperiores hic placeat quidem distinctio tempore dolorum totam optio accusantium id doloribus impedit nobis laboriosam!
-    </p>
-    <section>
+    <header>
+      <nav>
+        <!-- Internal Navigation-->
+        <a href="./">Home</a>
+        <a href="./about.html">About</a>
+      </nav>
+    </header>
+    <main>
+      <p>Hello Html at DCTP!</p>
+      <!--Display Image -->
+      <img src="./assets/images/img01.jpg" width="400px" alt="An image" />
+      <!-- Headings in HTML   -->
+      <h1>Heading 1</h1>
+      <article>
+        <section>
+          <h2 class="title">Heaading 2 applied with .title</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+            veniam, iusto, itaque praesentium harum ipsa asperiores hic placeat
+            quidem distinctio tempore dolorum totam optio accusantium id
+            doloribus impedit nobis laboriosam!
+          </p>
+        </section>
+      </article>
+      <section>
         <p>Categories of list</p>
         <ul>
-            <li>List one</li>
-            <li>list two</li>
-            <li>list three</li>
+          <li>List one</li>
+          <li>list two</li>
+          <li>list three</li>
         </ul>
         <ol>
-            <li>Food</li>
-            <li>Water</li>
-            <li>Shelter</li>
+          <li>Food</li>
+          <li>Water</li>
+          <li>Shelter</li>
         </ol>
-    </section>
-    <section>
+      </section>
+      <section>
         <!-- Handling Download Attribute-->
-            <a href="./assets/images/img01.jpg" download>Download Image </a>
-    </section>
-    <section>
+        <a href="./assets/images/img01.jpg" download>Download Image </a>
+      </section>
+      <section>
         <!--Handling Media Attibutes-->
         <!--Play audio in html-->
         <audio src="./assets/audio/away.mp3" controls>Away by Davido</audio>
         <!--Play/Embed video in html-->
         <video src="./assets/video/vid.mp4" controls></video>
-    </section>
+      </section>
+    </main>
   </body>
   <footer>
-    <p id="footer-p"> This is a footer id from css.</p>
+    <p id="footer-p">This is a footer id from css.</p>
   </footer>
 </html>

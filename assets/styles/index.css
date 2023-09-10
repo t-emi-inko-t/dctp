@@ -1,11 +1,37 @@
+:root {
+    --bg-color-1: black;
+    --custom-p-color: blue;
+}
+/*Grid Container */
+.grid-container {
+    display: grid;
+}
+html, body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    margin: 1px;
+}
+header {
+    padding: 10 solid grey;
+}
+.nav, .main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /* Element Selector*/
 p {
     color: rgb(53, 53, 53);
     font-size: 20px;
     text-align: justify;
 }
-
+/* ID Selector */
 #footer-p {
-    color: brown;
+    color: var(--custom-p-color);
     font-size: 15px;
+}
+/* Class Selector */
+.title {
+    font-size: 35px;
+    font-weight: 800;
+    text-decoration: underline;
 }
