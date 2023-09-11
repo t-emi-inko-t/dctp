@@ -17,7 +17,12 @@
       The purpose of forms is the collect important user infomation. A form is
       displayed below:
     </p>
-    <form action="">
+    <form
+      name="myForm"
+      action="./action.html"
+      onsubmit="return validateForm()"
+      method="post"
+    >
       <div>
         <label for="fullname">Full Name: </label>
         <input
@@ -25,6 +30,7 @@
           id="fullname"
           value=""
           placeholder="Full Name"
+          required
         /><br /><br />
         <label for="email">Email Address: </label>
         <input
@@ -32,19 +38,26 @@
           id="email"
           placeholder="Email Address"
         /><br /><br />
-       
-        <label for="message">Comments: </label><br>
-        <textarea name="message" id="message" cols="30" rows="5"></textarea><br>
-        <label for="feedback">Feedback: </label><br>
-        <select name="feedback" id="">
+
+        <label for="message">Comments: </label><br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          required
+        ></textarea
+        ><br />
+        <label for="feedback">Feedback: </label><br />
+        <select name="feedback" id="" required>
           <option value="5">Excellent</option>
           <option value="4">Very Good</option>
           <option value="3">Good</option>
           <option value="2">Fair</option>
-          <option value="1">Poor</option>
-        </select><br><br>
+          <option value="1">Poor</option></select
+        ><br /><br />
 
-        <input type="submit" value="Submit"><br>
+        <input type="submit" value="Submit" /><br />
       </div>
     </form>
   </body>
